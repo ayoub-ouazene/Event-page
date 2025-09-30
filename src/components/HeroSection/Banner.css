@@ -1,0 +1,235 @@
+.Hero
+{
+    background-color:#FFE69C ;
+    width: 100%;
+    height:23rem ;
+    margin: 0rem;
+    position: relative;
+    top: 4.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 7rem;
+    
+
+}
+
+.gdg-logo
+{
+    display: flex;
+    /* justify-content: space-between; */
+
+    align-items: center;
+    width: 10rem;
+    height: 5rem;
+    position: absolute;
+    top: 3.5rem;
+    right: 12vw;
+
+}
+
+.left-side
+{
+    background-image: url('../../assets/gdg-logo-left.svg');
+    width: 5rem;
+    height: 6rem;
+    margin-right: 0;
+    padding: 0;
+     background-repeat: no-repeat;
+     background-size: contain;
+     margin-left:-1rem ;
+}
+
+.right-side
+{
+     background-image: url('../../assets/gdg-logo-right.svg');
+      width: 5rem;
+    height: 6rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 0;
+    padding: 0;
+
+}
+
+
+.svg-container
+{
+    width: 58rem;
+    height: 43rem;
+
+}
+.svg-container svg image
+{
+    border: black solid 1px;
+}
+
+  
+
+
+.HeroTitle
+{
+    border: black 2px solid;
+    border-radius: 0.6rem;
+    font-size: 2.5rem;
+    font-weight: 500;
+    padding: 0.2rem 0.2rem;
+    width: 18rem;
+    height: 4rem;
+    background-color: #F8AA00;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    position:absolute ;
+    left: 8vw;
+    bottom:3.5rem;
+}
+
+
+@media (min-width: 1450px) {
+    .gdg-logo
+    {
+
+        right: 13rem;
+    }
+}
+
+
+@media (min-width: 1600px) {
+    .gdg-logo
+    {
+
+        right: 18rem;
+    }
+    .HeroTitle
+    {
+        left: 15rem;
+    }
+
+}
+
+
+@media (min-width: 1919px) {
+     .gdg-logo
+    {
+
+        right: 22vw;
+    }
+    .HeroTitle
+    {
+        left: 20vw;
+    }
+}
+
+
+
+
+@media (max-width: 1295px) {
+    .svg-container svg
+    {
+        width: 80vw;
+    
+        margin-left: 5rem;
+    }
+    .gdg-logo
+    {
+        right: 0rem;
+    }
+    .HeroTitle{
+        width: 25vw;
+        height: fit-content;
+        padding: 0.6rem 0;
+        font-size: 1.6rem;
+    }
+}
+
+
+
+@media (max-width: 680px) {
+    .svg-container svg
+    {
+        margin-left:3rem;
+    }
+    .gdg-logo
+    {
+        gap: 0.6rem;
+        top: 3rem;
+        right: -3rem;
+    }
+    .left-side , .right-side
+    {
+        width: 3rem;
+    }
+    .HeroTitle
+    {
+        font-size: 0.8rem;
+        bottom: 3rem;
+        left: 2rem;
+    }
+    .Hero
+    {
+        height: 16rem;
+    }
+}
+@media (max-width: 500px) {
+    .left-side , .right-side
+    {
+        width: 2rem;
+        
+    }
+    .Hero
+    {
+        height: 12rem;
+    }
+
+    .gdg-logo
+    {
+        left: 20rem;
+        top: 2rem;
+    }
+    .HeroTitle
+    {
+        width: 20vw;
+        height: fit-content;
+        padding: 0.4rem 0;
+        top: 8rem;
+    }
+}
+@media (max-width : 430px)
+{
+    .gdg-logo
+    {
+        left: 18rem;
+    }
+}
+
+@media (max-width: 382px) {
+    
+    .svg-container svg
+    {
+        margin-left: 1rem;
+        align-items: center;
+        margin-top: 0.4rem;
+    }
+    .right-side , .left-side
+    {
+        width: 2rem;
+    }
+    .gdg-logo
+    {
+        left: 15rem;
+        top: 3rem;
+    }
+    .HeroTitle
+    {
+        width: 20vw;
+        height: fit-content;
+        padding: 0.4rem 0;
+        top: 8rem;
+        left: 1rem;
+        font-size: 0.5rem;
+    }
+
+
+}

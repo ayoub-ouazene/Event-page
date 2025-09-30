@@ -1,0 +1,333 @@
+.WorkshopSectionContainer
+{
+    display: flex;
+    flex-direction: column;
+    padding-right: 1rem;
+    gap: 2rem;
+    overflow-x: auto;
+    overflow-x: hidden;
+    -ms-overflow-style: none;
+    scrollbar-width: none; 
+    overflow-y: hidden;
+ 
+}
+
+.title2
+{
+    display: flex;
+    align-items: center;
+    margin-left: 6rem;
+    gap: 1rem;
+    z-index: 4;
+   
+}
+
+
+.title2 p
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-align: center;
+    font-size: 1.7rem;
+    background-color:#F8AA00;
+    border-radius: 50%;
+    border: black 1px solid;
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+
+.WorkshopSection
+{
+    margin-left: 2rem;
+    width: fit-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 0;
+    flex-wrap: nowrap; 
+    overflow-x: auto; 
+    -ms-overflow-style: none;
+    scrollbar-width: none; 
+    border: none;
+    z-index: 6;
+    
+    transition:all 0.5s ease-in-out;
+   
+
+}
+
+.UpcomingEventsSection::-webkit-scrollbar {
+    display: none; /* Hides scrollbar in WebKit browsers */
+}
+
+
+.UpcomingEventsSection > * 
+{ 
+    flex-shrink: 0; 
+    width: 20rem;   
+
+}
+
+
+.mover
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+      
+}
+
+.left-side-arrow
+{
+    background-image: url("../../assets/gdg-left-arrow.png");
+    background-repeat: no-repeat;
+    background-size: contain;    
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-right: 1rem;
+    border: none;
+    background-color: transparent;
+     transition: all 0.3s ease-in-out;
+
+}
+
+.right-side-arrow
+{
+     background-image: url("../../assets/gdg-right-arrow.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    display: flex;
+    justify-content: center;
+    width: 4em;
+    height: 2.5rem;
+    margin-left:1rem ;
+    border: none;
+    background-color: transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+.left-side-arrow:hover , .right-side-arrow:hover
+{
+    scale: 1.05;
+}
+.page-points
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 1rem;
+}
+
+.page-point,.page-point-selected
+{
+    border: black solid 1px;
+    width: 0.8rem;
+    height: 0.8rem;
+    border-radius: 50%;
+    transition: all ease-in-out 0.3s;
+}
+
+.page-point-selected
+{
+    background-color: black;
+}
+
+
+.title-behind2
+{
+     
+      position: relative;
+      font-size:15vw;
+      z-index: -10;
+      /* font-weight: bolder; */
+      color: #d0d0d040;
+      text-align: center;
+      padding: 0.4rem;
+      left: 1rem;
+      bottom: 36rem;
+      transform: scaleY(1.15);
+    /* font-weight: bolder; */
+      font-family: 'Bebas Neue' , sans-serif;
+      letter-spacing: 4px;
+    
+}
+
+
+
+@media (min-width:1919px)
+{
+    .WorkshopSectionContainer
+    {
+        margin-top: -18vh;
+    
+    }
+    .title2 h2
+    {
+        font-size: 5rem;
+    }
+    .title2 p
+    {
+        width: 5rem;
+        height: 5rem;
+        font-size: 3rem;
+    }
+    .title-behind2
+    {
+        top: -45rem;
+        
+        /* color: #F8AA00; */
+    }
+   
+    
+
+}
+@media (min-width: 1450px) {
+    .title-behind2
+    {
+        top: -38rem;
+        font-size: 15vw;
+    }
+    .title2 h2
+    {
+        font-size: 4rem;
+    }
+    
+
+    .title2 p
+    {
+        width: 4rem;
+        height: 4rem;
+        font-size: 3rem;
+    }
+    
+}
+
+
+
+@media (max-width: 1279px) {
+}
+
+@media (max-width: 1023px) {
+    .title2 h2 {
+        font-size: 2rem;
+    }
+    .WorkshopSectionContainer
+    {
+        margin-top: 4rem;
+    }
+    .WorkshopSection
+    {
+        padding-bottom: 0rem;
+        margin-left: 1rem;
+    }
+   
+}
+
+@media (max-width: 700px) {
+
+    .WorkshopSectionContainer
+    {
+        margin-top: 8rem;
+    }
+  
+    .title-behind2
+    {
+        font-size: 14vw;
+        top: -34rem;
+    }
+    .title2 h2
+    {
+        font-size: 2rem;   
+    }
+    .title
+    {
+        margin-left: 0rem;
+    }
+   
+}
+
+@media (max-width: 540px) {
+    .title-behind2
+    {
+        top: -34rem;
+    }
+    .title2 h2
+    {
+        font-size: 1.6rem;
+    }
+}
+@media (max-width: 500px) {
+    .title2 h2
+    {
+        
+        font-size: 1.4rem;
+        margin-left: -1rem;
+        padding-left: 0rem;
+    }
+    .title2 p
+    {
+        width: 2.3rem;
+        height: 2.3rem;
+    }
+    .title2
+    {
+        margin-left: 3rem;
+    }
+    .WorkshopSectionContainer
+    {
+          margin-bottom: 5rem;
+    }
+    .title-behind2
+    {
+        top: -33rem;
+    }
+    .WorkshopSection
+    {
+        margin-left: 0.5rem;
+    }
+}
+
+@media (max-width: 398px) {
+   
+    
+    .title2 h2
+    {
+        font-size: 1.2rem;
+    }
+    .title2 p
+    {
+        width: 1.6rem;
+        height: 1.6rem;
+        font-size: 1rem;
+    }
+    .title-behind2
+    {
+        font-size: 13vw;
+        top:-32rem;
+    }
+  
+    
+    
+    .right-side-arrow
+    {
+        padding-left: 0rem;
+        margin-right: -2rem;
+       
+         width: 2rem;
+        height: 2rem;
+    }
+    .left-side-arrow
+    {
+        padding-right: 0rem;
+        margin-right: 1rem;
+        margin: 0rem;
+        width: 2rem;
+        height: 2rem;
+    }
+}
