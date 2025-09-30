@@ -5,6 +5,7 @@
     flex-direction: column;
     padding-right: 1rem;
     gap:5rem;
+    
     /* overflow-x: auto;
     overflow-x: hidden;
     -ms-overflow-style: none;
@@ -31,15 +32,26 @@
     width: 25rem;
     height: 25rem;
     /* background-color: cyan; */
-    display: flex;
-    justify-content: center;
+     display: grid; 
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+ 
     
 
 }
 
+.PrincipleImgContainer,
+.ImgLikeBg1,
+.ImgLikeBg2 {
+    grid-area: 1 / 1; 
+    position: relative;
+}
 
 .PrincipleImgContainer
 {
+    z-index: 10;
     height: 24rem;
     width: 17rem;
     background-color: white ;
@@ -82,28 +94,26 @@
 
 .ImgLikeBg1
 {
-    z-index: -10;
+    z-index: -2;
     background-color: hsla(0, 4%, 87%, 0.63);
-    top  : -19rem ;
-    left: 6rem;
-    height: 22rem ;
+
+    height: 23rem ;
     width:  14rem ;
-    transform: rotate(18deg);
-    position: relative;
+    transform: rotate(18deg) translate(1rem , -20rem);
+    /* position: relative; */
     box-shadow: 0px 0px 24px 0px #00000040;
     
 }
 
 .ImgLikeBg2
 {
-     z-index: -3;
+     z-index: -5;
     background-color: hsla(0, 4%, 87%, 0.63);
-     top  : -42rem ;
-    left: -3em;
-    height: 2rem ;
+ 
+    height: 23rem ;
     width:  15rem ;
-    transform: rotate(-14deg);
-    position: relative;
+    transform: rotate(-14deg) translate(5rem, -42rem);
+    /* position: relative; */
     box-shadow: 0px 0px 24px 0px #00000040;
 
 }
@@ -220,7 +230,7 @@
 {
     display: flex;
 }
-
+/* 
 
 
 
@@ -377,7 +387,7 @@
   
     .PreviousEvents h3
     {
-        font-size: 2rem;
+        font-size: 1.5rem;
         
         width: 25rem;
     }
@@ -409,16 +419,16 @@
     .ImgLikeBg1
     {
        left: 11rem;
-       height: 32vh;
+       height: 60vh;
        width: 18vw;
-       top: -26rem;
+       top: -20rem;
        transform: rotate(20deg);
     }
     .ImgLikeBg2
     {
-         height: 32vh;
+         height: 70vh;
        width: 20vw;
-       top: -57rem;
+       top: -40rem;
        left: -4rem;
 
     }
@@ -607,7 +617,7 @@
     {
         gap: 1.1rem;
         /* margin-left: 1rem; */
-    }
+ /*   }
     .details p
     {
         font-size: 0.55rem;
@@ -636,7 +646,7 @@
     }
 
  
-}
+}/*
 
 
 @media (max-width: 500px) {
@@ -682,7 +692,8 @@
     {
         gap: 1.1rem;
         /* margin-left: 1rem; */
-    }
+  
+  /*  }
     .details p
     {
         font-size: 0.55rem;
@@ -777,4 +788,4 @@
     }
 
 }
-
+ */

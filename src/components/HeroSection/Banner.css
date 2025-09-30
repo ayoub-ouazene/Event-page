@@ -23,7 +23,7 @@
     width: 10rem;
     height: 5rem;
     position: absolute;
-    top: 3.5rem;
+    top:       12vh;
     right: 12vw;
 
 }
@@ -82,10 +82,10 @@
     text-align: center;
     align-items: center;
     position:absolute ;
-    left: 8vw;
-    bottom:3.5rem;
+    left: 8%;
+    bottom:12%;
 }
-
+/* 
 
 @media (min-width: 1450px) {
     .gdg-logo
@@ -232,4 +232,4 @@
     }
 
 
-}
+} */
