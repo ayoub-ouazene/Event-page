@@ -3,8 +3,9 @@
 {
     display: flex;
     flex-direction: column;
-    gap: 4rem;
+    gap: 2rem;
      padding-left: 6vw;
+     padding-top: 10vh;
     /* margin-bottom: 6vh; */
 }
 
@@ -72,4 +73,33 @@
 .time h3
 {
     font-size: 1.7rem;
+}
+
+@media (max-width:768px)
+{
+    .timeline
+    {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .day
+    {
+        align-items: center;
+    }
+    .EventCalender
+    {
+        gap: 3rem;
+    }
+    .time
+    {
+        flex-direction: row;
+        justify-content: center;
+        gap: 4rem;
+        
+    }
+    .time h3
+    {
+        font-size: 1rem;
+    }
 }

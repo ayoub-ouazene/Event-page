@@ -13,6 +13,7 @@ const Workshop = ({ ImgLink, Name, description, day, month, place, Time }) => {
          </div>
 
       </div>
+      
         
 
         <div className="InfoContainer2">

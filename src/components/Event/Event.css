@@ -2,8 +2,8 @@
 .EventContainer
 {
    box-shadow: 0px 0px 24px 0px rgb(160, 160, 160) ;
-   height: 28rem;
-   width: 20rem;
+   height:80vh;
+ 
    border-radius: 1rem;
    margin-top: 1rem;
    border: 1px solid wheat;
@@ -11,25 +11,22 @@
    display: flex;
    flex-direction: column;
    margin-left: 1rem;
-   padding: 0;
+
    position: relative;
+   flex: 1 0 30%;
    
-
-
 
 }
 
 .EventImg
 {
     width: 100%;
-    height: 15rem;
+    height: 45vh;
     border-radius: 1rem;
    
     background-repeat: no-repeat;
     background-size: cover;
     padding: 0px;
-    /* margin-top: -1.5rem; */
-
   
 }
 
@@ -57,7 +54,7 @@
 {
     font-size: 0.8rem;
     font-weight: 500;
-    width:85% ;
+    max-width:85% ;
     padding-top: 0.3rem;
    
 }
@@ -73,17 +70,18 @@
 {
     display: flex;
     gap: 0.3rem;
+    padding-left: 0.5rem;
+    padding-right:0.5rem ;
 }
 
 .date h2
 {
     padding-left: 0.2rem;
-   
 }
 .date h4
 {
     align-self: flex-end;
-    padding-bottom: 0.5rem;
+    padding-bottom: 0.6rem;
     font-weight:500;
 }
 
@@ -95,6 +93,7 @@
     padding-bottom: 0.2rem;
     padding-right: 0.3rem;
 }
+
 .otherInfo p
 {
     font-size: 0.8rem;
@@ -110,18 +109,19 @@
     cursor: pointer;
     font-size: 1.1rem;
     padding: 0 1rem; 
-    
-  
+    position: relative;
    
-   
-              
+
 }
-.EventContainer::after
+
+
+.RegisterBtn::after
 {
     content: '';
     position: absolute;
     content: '';
-    width: 18rem;
+    width: 95%;
+    justify-content: center;
     height: 1.5rem;
     /* background-color: #EA4335; */
     background: linear-gradient(
@@ -131,14 +131,11 @@
     #FBBC05, 
     #34A853  
   );
-  
-  left: 1rem;
-  bottom:0.5rem ;
 
-  
+  left: 1rem;
+  bottom:-0.3rem ;
   z-index: -1;
   filter: blur(5px); 
-
 
 }
 
@@ -147,19 +144,82 @@
     background-color: rgb(27, 26, 26);
 }
 
-@media (max-width: 415px)
-{
-    
 
-    .EventContainer::after
-    {
-       bottom: 2rem;
-    }
+
+
+@media (min-width: 1920px) {
+  .EventContainer
+  {
+    height: 60vh;
+
+     
+  }
+  .description , .timeInfo
+  {
+    padding-left: 2vw;
+    padding-right: 2vw;
+    font-size: 1.2rem;
+  }
+  
 }
-@media (max-width:600px)
+
+
+@media (max-width: 1919px) {
+  .EventContainer
+  {
+    height: 60vh;
+
+       
+  }
+   
+}
+
+
+@media (max-width: 1439px) {
+}
+
+@media (max-width: 1320px) {
+  .EventContainer
+  {
+    height: 80vh;
+  }
+ 
+ 
+}
+
+
+
+@media (max-width:1080px)
 {
-    .EventContainer::after
+    .EventContainer
     {
-        bottom: 1.7rem;
+        flex: 1 0 45%;
+        height: 80vh;
     }
 }
+@media (max-width : 980px)
+{
+  .EventContainer
+  {
+    height: 60vh;
+  }
+}
+
+@media (max-width:700px)
+{
+    .EventContainer
+    {
+        flex: 1 0 90%;
+       
+       
+    }
+    .timeInfo h4
+    {
+        padding-bottom: 0.2rem;
+    }
+    
+}
+
+
+
+

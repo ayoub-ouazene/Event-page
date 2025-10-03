@@ -64,17 +64,25 @@ function WorkshopSection() {
   useEffect(()=>{
     setN(events.length)
   },[]);
+
+  const getCardWidthUnit = () => {
+        if (typeof window === "undefined") return 30;
+        if(window.innerWidth <= 900 ) return 90;
+        if (window.innerWidth <= 639) return 98; // Mobile: one item (100% of the list width)
+        if (window.innerWidth <= 1150) return 40; // Tablet: two items (50% of the list width)
+        return 43; // Desktop: three items (33.33% of the list width)
+    };
    
 
 const handleRightSideClick = ()=>{
   SetIndex(Index+1 >= events.length ? events.length -1 : Index +1  );
-  setTranslation(Index+1 >= events.length ? translation : translation -31)
+  setTranslation(Index+1 >= events.length ? translation : translation - getCardWidthUnit())
 
   }
 
 const handleLeftSideClick = ()=> {
   SetIndex(Index-1 <0 ? 0 : Index -1);
-  setTranslation(Index-1 <0 ? 0 : translation + 31)
+  setTranslation(Index-1 <0 ? 0 : translation + getCardWidthUnit())
 }
 
 const points = () => {
@@ -103,7 +111,7 @@ const points = () => {
         <h2>Workshops Highlights</h2>
         <p>{n}</p>
       </div>
-      <div className="WorkshopSection"  style={{ transform: `translateX(${translation}rem)`}}>
+      <div className="WorkshopSection"  style={{ transform: `translateX(${translation}vw)`}}>
   
            {events.map((event,index) => (
           <Workshop

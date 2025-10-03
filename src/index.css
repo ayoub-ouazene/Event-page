@@ -15,14 +15,16 @@
   padding: 0;
   box-sizing: border-box;
   font-weight: 400;
+
 }
 
 html {
   font-family: "Product Sans", sans-serif;
-  font-size: 18px;
+
     margin: 0;
     scrollbar-width: none;
     -ms-overflow-style: none;
+     overflow-x: hidden;
 }
 
 body 

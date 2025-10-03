@@ -2,26 +2,22 @@
 {
     display: flex;
     flex-direction: column;
-    padding-right: 1rem;
-    gap: 2rem;
+    gap: 4vh;
     overflow-x: hidden;
     -ms-overflow-style: none;
     scrollbar-width: none; 
     padding-bottom: 0;
-    justify-content: flex-start;
-    margin-bottom: -9rem;
-    margin-top: 40vh;
-    overflow-y: hidden;
-    
-    
+    position: relative;
+
 }
 
 .title
 {
     display: flex;
     align-items: center;
-     margin-left: 6rem;
+
     gap: 1rem;
+    padding-left: 5vh;
    
 }
 
@@ -31,7 +27,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
     text-align: center;
     font-size: 1.7rem;
     background-color:#70A3FA ;
@@ -44,24 +39,19 @@
 
 .UpcomingEventsSection
 {
-    margin-left: 3rem;
+    
     padding-left: 1rem;
 
-    width: fit-content;
+   
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 1.5rem;
-    margin-bottom: 0;
-    flex-wrap: nowrap; 
-    overflow-x: auto; 
+    gap: 2vw;
+
     -ms-overflow-style: none;
     scrollbar-width: none; 
     border: none;
      
-      
-
-   
 
     transition:all 0.5s ease-in-out;
    
@@ -70,14 +60,6 @@
 
 .UpcomingEventsSection::-webkit-scrollbar {
     display: none; 
-}
-
-
-.UpcomingEventsSection > * { 
-    flex-shrink: 0; 
-    width: 20rem;   
-
-
 }
 
 
@@ -96,7 +78,7 @@
     background-size: contain;    
     width: 2.5rem;
     height: 2.5rem;
-    /* margin-right: 1rem; */
+    
     border: none;
     background-color: transparent;
 
@@ -111,9 +93,9 @@
 
     display: flex;
     justify-content: center;
-    width: 4em;
+    width: 2.5em;
     height: 2.5rem;
-    /* margin-left:1rem ; */
+ 
     border: none;
     background-color: transparent;
 }
@@ -122,7 +104,8 @@
 {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    
+    justify-content: center;
     gap: 1rem;
 }
 
@@ -144,190 +127,92 @@
 .title-behind
 {
      
-      position: relative;
+      position: absolute;
       font-size: 15vw;
       z-index: -10;
-      /* font-weight: bolder; */
       color: #d0d0d040;
       text-align: center;
       padding: 0.4rem;
-      left: 1rem;
-      bottom: 42rem;
+      left: 5%;
+      text-align: center;
+      bottom: 60%;
       transform: scaleY(1.15);
-    /* font-weight: bolder; */
+   
       font-family: 'Bebas Neue' , sans-serif;
       letter-spacing: 4px;
     
 }
 
 
-
-
-@media (min-width:1919px)
+@media (min-width: 1920px)
 {
-  
-    .title h2
-    {
-        font-size: 5rem;
-    }
-    .title p
-    {
-        width: 5rem;
-        height: 5rem;
-        font-size: 3rem;
-    }
-    .title-behind
-    {
-       
-        bottom: -10rem;
- 
-    }
-    
-
-} 
-
-@media (min-width: 1450px) {
-    .title-behind
-    {
-        top: -45rem;
-    }
-    .title h2
-    {
-        font-size: 4rem;
-    }
-    
-    .eventSectionContainer
-    {
-        margin-top: 15rem;
-        
-    }
-    .title p
-    {
-        width: 4rem;
-        height: 4rem;
-        font-size: 3rem;
-    }
-    
-}
-
-@media (max-width: 1450px) {
-     .eventSectionContainer
-    {
-        margin-top:25vh;
-    
-    }
-
-}
-
-@media (max-width: 1279px) {
-}
-
-@media (max-width: 1023px) {
-    .title h2 {
-        font-size: 2rem;
-    }
     .UpcomingEventsSection
     {
-        padding-bottom: 0rem;
-        margin-left: 0.5rem;
+        gap: 3vw;
     }
-   
-}
-
-@media (max-width: 700px) {
-
     .eventSectionContainer
     {
-        margin-top: 10rem;
-    }
-    .UpcomingEventsSection
-    {
-        padding-bottom: 0rem;
-        margin-left: 0rem;
+        gap:4vw;
+    
     }
     .title-behind
     {
-        font-size: 14vw;
-        top: -40rem;
+        left: 8%;
     }
-    .title h2
-    {
-        font-size: 2.4rem; 
-        margin-left: 2.4rem;  
-    }
-    .title
-    {
-        /* margin-left: 20rem; */
-        padding-left: 8vw;
-    }
-   
 }
 
-@media (max-width: 639px) {
+@media (max-width:1919px)
+{
+    .right-side-arrow
+    {
+        margin: 0;
+    }
+   .UpcomingEventsSection
+   {
+     gap: 2.5vw;
+   }
 }
-@media (max-width: 500px) {
-    .title h2
-    {
-        font-size: 2rem;
-        margin-left: -0.5rem;
-        padding-left: 0rem;
-    }
-    .title p
-    {
-        width: 2rem;
-        height: 2rem;
-    }
+
+@media (max-width: 1919px)
+{
     .eventSectionContainer
     {
-          margin-bottom: 5rem;
+       gap: 3vh;
     }
-     .UpcomingEventsSection
-     {
-        gap: 2rem;
-     }
-
+}
+@media (max-width:700px)
+{
+    .UpcomingEventsSection
+    {
+        gap: 8vw;
+    }
+    
 }
 
-@media (max-width: 398px) {
-    
-    .title h2
+@media (max-width:638px)
+{
+    .UpcomingEventsSection
     {
-        font-size: 1.4rem;
+        margin-left: 4vw;
     }
-    .title p
+    .title-behind
     {
-        width: 1.5rem;
-        height: 1.5rem;
-        font-size: 1rem;
+        top: 2%;
+    }
+}
+
+
+@media (max-width: 460px) {
+    .UpcomingEventsSection
+    {
+        margin-left: 0vw;
+        padding-left: 2vw;
+        gap: 7.5vw;
     }
     .title-behind
     {
         font-size: 13vw;
-        top:-36rem;
+        top: 4%;
+    
     }
-    .eventSectionContainer
-    {
-        gap: 1.2rem;
-        margin-left: 0;
-        padding-left: 0;
-    }
-   
-    .page-points
-    {
-        gap: 0rem;
-          width: 8rem;
-          margin-left: 1rem;
-       
-    }
-   
-
-   
-} 
-
-@media (max-width: 540px) {
-    .title h2
-    {
-        font-size: 1.8rem;
-    }
-
 }

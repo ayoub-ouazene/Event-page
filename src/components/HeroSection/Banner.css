@@ -2,14 +2,15 @@
 {
     background-color:#FFE69C ;
     width: 100%;
-    height:23rem ;
+    height:60vh ;
     margin: 0rem;
     position: relative;
-    top: 4.5rem;
+    top:5vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 7rem;
+   /*/////*/
+
     
 
 }
@@ -17,219 +18,257 @@
 .gdg-logo
 {
     display: flex;
-    /* justify-content: space-between; */
-
+    bottom: 70%;
+    left: 75%;
     align-items: center;
-    width: 10rem;
-    height: 5rem;
+    width: 20%;
+    height: 30%;
     position: absolute;
-    top:       12vh;
-    right: 12vw;
+    justify-content: center;
+  
+   
 
 }
 
 .left-side
 {
     background-image: url('../../assets/gdg-logo-left.svg');
-    width: 5rem;
-    height: 6rem;
-    margin-right: 0;
-    padding: 0;
+    width: 100%;
+    height: 100%;
      background-repeat: no-repeat;
      background-size: contain;
-     margin-left:-1rem ;
+     padding: 0rem;
+     margin:0rem;
+   
 }
 
 .right-side
 {
      background-image: url('../../assets/gdg-logo-right.svg');
-      width: 5rem;
-    height: 6rem;
+      width: 100%;
+    height: 100%;
     background-size: contain;
     background-repeat: no-repeat;
-    margin-left: 0;
-    padding: 0;
+      padding: 0rem;
+     margin:0rem;
+
+
+} 
+.GdgLogo
+{
+    position: absolute;
+    right: -5%;
+    top: -10%;
+     width: 40%;
+    height: 40%;
 
 }
 
 
 .svg-container
 {
-    width: 58rem;
-    height: 43rem;
+    width: 90vw;
+    height: 35vh;
+    position: relative;
 
 }
+
+/* .svg-container svg
+{
+    width: 100vw; 
+    height: 35vh;
+} */
 .svg-container svg image
 {
     border: black solid 1px;
-}
+} 
 
   
-
-
 .HeroTitle
 {
     border: black 2px solid;
     border-radius: 0.6rem;
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     font-weight: 500;
-    padding: 0.2rem 0.2rem;
-    width: 18rem;
-    height: 4rem;
+    padding: 0.1rem 0.1rem;
+    width:25%;
+    height:25%;
     background-color: #F8AA00;
     display: flex;
     justify-content: center;
     text-align: center;
     align-items: center;
-    position:absolute ;
-    left: 8%;
-    bottom:12%;
-}
-/* 
-
-@media (min-width: 1450px) {
-    .gdg-logo
-    {
-
-        right: 13rem;
-    }
-}
-
-
-@media (min-width: 1600px) {
-    .gdg-logo
-    {
-
-        right: 18rem;
-    }
-    .HeroTitle
-    {
-        left: 15rem;
-    }
-
-}
-
-
-@media (min-width: 1919px) {
-     .gdg-logo
-    {
-
-        right: 22vw;
-    }
-    .HeroTitle
-    {
-        left: 20vw;
-    }
-}
-
-
-
-
-@media (max-width: 1295px) {
-    .svg-container svg
-    {
-        width: 80vw;
     
-        margin-left: 5rem;
-    }
-    .gdg-logo
-    {
-        right: 0rem;
-    }
-    .HeroTitle{
-        width: 25vw;
-        height: fit-content;
-        padding: 0.6rem 0;
-        font-size: 1.6rem;
-    }
+    position: absolute;
+    left: 10%;
+    top:70%;
 }
 
 
 
-@media (max-width: 680px) {
-    .svg-container svg
-    {
-        margin-left:3rem;
-    }
-    .gdg-logo
-    {
-        gap: 0.6rem;
-        top: 3rem;
-        right: -3rem;
-    }
-    .left-side , .right-side
-    {
-        width: 3rem;
-    }
-    .HeroTitle
-    {
-        font-size: 0.8rem;
-        bottom: 3rem;
-        left: 2rem;
-    }
-    .Hero
-    {
-        height: 16rem;
-    }
-}
-@media (max-width: 500px) {
-    .left-side , .right-side
-    {
-        width: 2rem;
-        
-    }
-    .Hero
-    {
-        height: 12rem;
-    }
-
-    .gdg-logo
-    {
-        left: 20rem;
-        top: 2rem;
-    }
-    .HeroTitle
-    {
-        width: 20vw;
-        height: fit-content;
-        padding: 0.4rem 0;
-        top: 8rem;
-    }
-}
-@media (max-width : 430px)
+@media (max-width:3000px)
 {
-    .gdg-logo
+     .HeroTitle
     {
-        left: 18rem;
+         left: 0%;
+         top:70%;
+         font-size: 4rem;
+           width:30%;
+          height:20%;
+
+    }
+    .GdgLogo
+    {
+
+         right: -5%;
+    top: 0%;
+     width: 30%;
+    height: 30%;
+
+    }
+
+}
+
+@media (max-width:1350px)
+{
+    .Hero
+    {
+       top: 12vh;
+        padding-top: 5vh;
+    }
+     .HeroTitle
+    {
+         left: 8%;
+         top:75%;
+         font-size: 2.5rem;
+           width:25%;
+          height:25%;
+
+    }
+    .GdgLogo
+    {
+
+         right: 5%;
+    top: -5%;
+     width: 35%;
+    height: 35%;
+
+    }
+
+}
+
+@media (max-width:1023px)
+{
+
+    .Hero
+    {
+       top: 5vh;
+    }
+     .HeroTitle
+    {
+         left: 0%;
+         top:75%;
+         font-size: 1.8rem;
+           width:27%;
+          height:20%;
+
+    }
+    .GdgLogo
+    {
+
+         right: -5%;
+    top: 0%;
+     width: 30%;
+    height: 30%;
+
+    }
+
+}
+
+
+
+@media (max-width: 767px) {
+      .Hero
+    {
+       top: 15vh;
+    }
+     .HeroTitle
+    {
+         left: 0%;
+         top:75%;
+         font-size: 1.5rem;
+           width:27%;
+          height:22%;
+
+    }
+    .GdgLogo
+    {
+
+         right: -10%;
+    top: -5%;
+     width: 35%;
+    height: 35%;
+
     }
 }
 
-@media (max-width: 382px) {
-    
-    .svg-container svg
+@media (max-width: 520px) {
+    .Hero
     {
-        margin-left: 1rem;
-        align-items: center;
-        margin-top: 0.4rem;
+        top: 10vh;
+        height: 30vh;
+        padding-top: 0;
     }
-    .right-side , .left-side
+ 
+     .HeroTitle
     {
-        width: 2rem;
+         left: 0%;
+         top:60%;
+         font-size: 1rem;
+           width:27%;
+          height:10%;
+          border-radius: 0.4rem;
+
     }
-    .gdg-logo
+    .GdgLogo
     {
-        left: 15rem;
-        top: 3rem;
-    }
-    .HeroTitle
-    {
-        width: 20vw;
-        height: fit-content;
-        padding: 0.4rem 0;
-        top: 8rem;
-        left: 1rem;
-        font-size: 0.5rem;
+
+         right: -5%;
+    top: 15%;
+     width: 25%;
+    height: 25%;
+
     }
 
 
-} */
+}
+
+@media (max-width: 394px) {
+    .Hero
+    {
+        height: 28vh;
+        padding-top: 0;
+        top:10vh;
+    }
+ 
+     .HeroTitle
+    {
+         left: 0%;
+         top:60%;
+         font-size: 0.8rem;
+           width:27%;
+          height:10%;
+          border-radius: 0.4rem;
+
+    }
+    .GdgLogo
+    {
+
+         right: 0%;
+    top: 20%;
+     width: 20%;
+    height: 20%;
+
+    }
+
+}

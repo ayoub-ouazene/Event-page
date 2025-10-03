@@ -10,17 +10,7 @@
     #000000 0%,
     #3f3f3f 100%
   );
-  
- box-shadow:
-    /* Layer 1: Blue - starts left */
-    -1000px 0px 50px 5px  #4285F4, /* x y blur spread color */
-    /* Layer 2: Red - slightly right */
-    -750px 0px 50px 5px  #EA4335,
-    /* Layer 3: Yellow - more right */
-    -500px -2px 50px 5px  #FBBC05,
-    /* Layer 4: Green - far right */
-    200px -1px 50px 5px #34A853;
-
+ 
 }
 
 .footer::after {

@@ -4,6 +4,13 @@ body
 {
   margin: 0px;
   padding: 0rem;
+  height: fit-content;
   
+}
+.event-page
+{
+  display: flex;
+  flex-direction: column;
+  gap: 20vh;
 }
 

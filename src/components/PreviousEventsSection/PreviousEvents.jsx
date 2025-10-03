@@ -6,6 +6,7 @@ import { useState } from 'react'
 import RightImg from '../../assets/gdg-right-arrow.png'
 import LeftImg from '../../assets/gdg-left-arrow.png'
 
+
 const PreviousEvents = ()=>
 {
 
@@ -68,19 +69,15 @@ const PreviousEvents = ()=>
 
        <div className="PreviousEvents">
            
-           <div className="PreviousEventImgs"> 
+         
                <PreviousEventImg ImgLink={PrevEvents[index].img} Title={PrevEvents[index].title} date={PrevEvents[index].date} />
-           </div>
+         
          
          <div className="arrows">
               {index <=0 ? <></>: <button className="EventArrowLeft"  onClick={handleSwitchEventToLeft}></button>}
               {index +1 >= PrevEvents.length ? <></>:<button className="EventArrowRight"   onClick={handleSwitchEventToRight}></button>}
-
-
          </div>
           
-
-
            <div className="description3">
               <h3>{PrevEvents[index].description}</h3>
            </div>

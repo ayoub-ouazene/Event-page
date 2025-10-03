@@ -5,19 +5,17 @@ import "./EventPage.css"
 import PreviousEvents from "../../components/PreviousEventsSection/PreviousEvents.jsx"
 import Footer from "../../components/FooterSection/Footer.jsx"
 import Nav from "../../components/Nav/Nav.jsx"
-const EventPage = () => {
-  return (
-    <div className="event-page">
-      <Nav/>
-      <Banner/>
-      <UpcomingEvents/>
-      <WorkshopSection/>
-      <PreviousEvents/>
-      <Footer/>
-    
-    </div>
-  )
-}
+const EventPage = () => (
+  <div className="event-page">
+    <Nav />
+    <Banner />
+    <UpcomingEvents />
+    <WorkshopSection />
+    <PreviousEvents />
+    <Footer/>
+
+  </div>
+)
 
 
 export  default EventPage
