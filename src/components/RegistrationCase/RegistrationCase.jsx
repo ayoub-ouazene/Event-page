@@ -44,23 +44,26 @@ const RegistrationCase = ({event}) => {
             return (
                 <>
                     <section className="registirations">
-                        <div className="container">
-                            <div className="textGroup">
-                                <h2 className="SecureYourSpot">Secure Your Spot</h2>
+                            <div className="container">
+                                <div className="textGroup">
+                                <h1>Secure Your Spot</h1>
                                 <div className="registirationsStatus">
-                                    <span className={areOpen ? "statusOpen" : "statusClosed"}></span>
-                                    <p>Registrations are {areOpen ? "open" : "closed"}</p>
+                                    <span
+                                    className={areOpen ? "statusOpen" : "statusClosed"}
+                                    ></span>
+                                    <h3>Registrations are {areOpen ? "open" : "closed"}</h3>
+                                </div>
+                                </div>
+                                <div className="ticketsContainer">
+                                <img src="src\assets\Ticket.png" alt="Ticket Image" />
+                                <img src="src\assets\Ticket.png" alt="Ticket Image" />
+                                <img src="src\assets\Ticket.png" alt="Ticket Image" />
                                 </div>
                             </div>
-                            <div className="ticketsContainer">
-                                <img src="src\assets\Ticket.png" />
-                                <img src="src\assets\Ticket.png" />
-                                <img src="src\assets\Ticket.png" />
-                            </div>
-                        </div>
-                    </section>
+                     </section>
                 </>
             );
+
         } else if (event.Case === "not-yet") {
             const days = Math.floor(diff / (1000 * 60 * 60 * 24));
             const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
@@ -94,7 +97,9 @@ const RegistrationCase = ({event}) => {
     return (
         <div className="EventCaseSection">
             <h2 className="EventCaseSection-title"> Registration</h2>
+        
             {DisplayCase()}
+
         </div>
     );
 };

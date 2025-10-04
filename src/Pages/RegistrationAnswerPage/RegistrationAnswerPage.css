@@ -5,4 +5,14 @@
     gap: 10vh;
 }
 
+@media (max-width:500px)
+{
+    .RegistrationAnswerPage
+    {
+        gap: 8vh;
+    }
+
+}
+
+
 

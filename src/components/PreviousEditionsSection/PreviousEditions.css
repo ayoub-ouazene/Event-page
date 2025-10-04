@@ -11,6 +11,7 @@
 .PreviousEditionsSection h2
 {
     align-self: start;
+
 }
 .PreviousEditionsImgs
 {
@@ -31,13 +32,11 @@
     width: 34vw;
 }
 
-/* --- Image Containers (Fixed Positions) --- */
+
 .carousel-item {
-    /* 🔑 KEY FOR SMOOTH ROTATION: Add transition to background-image property */
-    /* When the state updates the background-image URL, this makes the change smooth */
+
     transition: background-image 0.5s ease-in-out; 
-    
-    /* Common styles for all image containers */
+
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center; 
@@ -45,32 +44,31 @@
     position: relative; 
 }
 
-/* --- Specific Position Sizing (Fixed Heights) --- */
-/* The heights must total 24rem minus the gap (0.5rem) */
-.firstImg /* Top Left */
+
+.firstImg 
 {
     height: 14rem;
     width: 34vw;
 }
 
-.secondImg /* Bottom Left */
+.secondImg 
 {
-    height: 9.5rem; /* Adjusted slightly so 14rem + 9.5rem + 0.5rem gap = 24rem */
-    width: 34vw;
+    height: 9.5rem; 
+        width: 34vw;
 }
 
-.thirdImg /* Top Right */
+.thirdImg 
 {
     height: 6rem ;
     width: 34vw;
 }
 .fourthImg /* Bottom Right */
 {
-    height: 17.5rem; /* Adjusted so 6rem + 17.5rem + 0.5rem gap = 24rem */
+    height: 17.5rem; 
     width: 34vw;
 }
 
-/* --- Image Text Overlay (for GDG Open Day image) --- */
+
 .imgTextOverlay {
     position: absolute;
     bottom: 0.5rem;
@@ -93,7 +91,32 @@
 {
     .PreviousEditionsImgs
     {
+        width: 80vw;
+
+    }
+    .PreviousEditionsImgs
+    {
         align-items: center;
         justify-content: center;
     }
+    .firstImgColumn, .secondImgColumn
+    {
+        width: 40vw;
+    }
+    .firstImg,.secondImg ,.thirdImg , .fourthImg
+    {
+        width: 40vw;
+    }
+    .PreviousEditionsSection
+    {
+        margin-left: 0rem;
+    }
+
+    .PreviousEditionsSection h2
+{
+   
+     margin-left: 7vw;
+}
+
+
 }
